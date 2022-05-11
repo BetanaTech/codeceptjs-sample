@@ -4,7 +4,8 @@
   "private": true,
   "description": "Demo site for learning test automation (hotel reservation)",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "http-server -p 3000"
   },
   "keywords": [
     "learn-to-code",
@@ -15,7 +16,12 @@
   "author": "Takeshi Kishi",
   "license": "MIT",
   "devDependencies": {
+    "codeceptjs": "^3.3.3",
+    "testcafe": "^1.18.6",
     "webpack": "^5.64.2",
     "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.0"
   }
 }
