@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <title>お天気（選択）</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <input type="radio" id="tokyo" name="forecast" value="130010" />
+        <label for="tokyo">東京</label>
+      </div>
+      <div>
+        <input type="radio" id="yokohama" name="forecast" value="140010" />
+        <label for="yokohama">横浜</label>
+      </div>
+      <div>
+        <input type="radio" id="chiba" name="forecast" value="120010" />
+        <label for="chiba">千葉</label>
+      </div>
+      <div>
+        <button type="submit" id="submit">送信</button>
+      </div>
+    </form>
+    <div id="output"></div>
+    <script src="../src/forecast.js"></script>
+  </body>
+</html>

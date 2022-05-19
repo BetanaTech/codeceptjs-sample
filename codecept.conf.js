@@ -1,4 +1,5 @@
 const { setHeadlessWhen, setCommonPlugins } = require('@codeceptjs/configure');
+const { Selector } = require('testcafe');
 
 // turn on headless mode when running with HEADLESS=true environment variable
 // export HEADLESS=true && npx codeceptjs run
@@ -12,7 +13,7 @@ exports.config = {
   output: './codeceptjs/output',
   helpers: {
     TestCafe: {
-      url: 'http://localhost:3000',
+      url: 'http://localhost:58080',
       browser: 'chrome',
       show: false,
     },

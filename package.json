@@ -5,14 +5,11 @@
   "description": "Demo site for learning test automation (hotel reservation)",
   "scripts": {
     "build": "webpack",
-    "start": "http-server -p 3000"
+    "start": "http-server -p 58080",
+    "test": "codeceptjs run --steps",
+    "app": "node ./express/app.js"
   },
-  "keywords": [
-    "learn-to-code",
-    "testing",
-    "automation",
-    "test-automation"
-  ],
+  "keywords": ["learn-to-code", "testing", "automation", "test-automation"],
   "author": "Takeshi Kishi",
   "license": "MIT",
   "devDependencies": {
@@ -22,6 +19,7 @@
     "webpack-cli": "^4.9.1"
   },
   "dependencies": {
+    "express": "^4.18.1",
     "http-server": "^14.1.0"
   }
 }
